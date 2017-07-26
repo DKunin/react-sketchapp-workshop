@@ -1,0 +1,29 @@
+{
+  "name": "sketchapp-workshop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "sketchapp-workshop.sketchplugin",
+  "manifest": "src/manifest.json",
+  "scripts": {
+    "build": "./node_modules/skpm/lib/skpm.js build",
+    "watch": "./node_modules/skpm/lib/skpm.js build --watch",
+    "render": "./node_modules/skpm/lib/skpm.js build --watch --run",
+    "render:once": "./node_modules/skpm/lib/skpm.js build --run",
+    "link-plugin": "./node_modules/skpm/lib/skpm.js link"
+  },
+  "author": "Dmitri Kunin <info@dkunin.ru>",
+  "license": "MIT",
+  "devDependencies": {
+    "skpm": "^0.10.2"
+  },
+  "dependencies": {
+    "chroma-js": "^1.2.2",
+    "prop-types": "^15.5.8",
+    "react": "15.6.1",
+    "react-dom": "15.6.1",
+    "react-native": "0.46.4",
+    "react-primitives": "0.4.3",
+    "react-sketchapp": "0.11.6",
+    "react-test-renderer": "^15.4.2"
+  }
+}
