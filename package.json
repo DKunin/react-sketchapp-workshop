@@ -9,11 +9,14 @@
     "watch": "./node_modules/skpm/lib/skpm.js build --watch",
     "render": "./node_modules/skpm/lib/skpm.js build --watch --run",
     "render:once": "./node_modules/skpm/lib/skpm.js build --run",
-    "link-plugin": "./node_modules/skpm/lib/skpm.js link"
+    "link-plugin": "./node_modules/skpm/lib/skpm.js link",
+    "web": "react run src/web.js"
   },
   "author": "Dmitri Kunin <info@dkunin.ru>",
   "license": "MIT",
   "devDependencies": {
+    "extract-text-webpack-plugin": "^2.1.0",
+    "nwb": "^0.15.6",
     "skpm": "^0.10.2"
   },
   "dependencies": {

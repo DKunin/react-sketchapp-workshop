@@ -1,0 +1,229 @@
+{
+    "extends": "eslint:recommended",
+    "rules": {
+        "no-console": 1,
+        "valid-jsdoc": 2,
+        "no-underscore-dangle": 2,
+        "no-empty": [
+            2, {
+                "allowEmptyCatch": true
+            }
+        ],
+        "no-implicit-coercion": [
+            2, {
+                "boolean": true,
+                "string": true,
+                "number": true
+            }
+        ],
+        "no-with": 2,
+        "no-mixed-spaces-and-tabs": 2,
+        "no-multiple-empty-lines": 2,
+        "no-multi-str": 2,
+        "dot-location": [
+            2,
+            "property"
+        ],
+        "operator-linebreak": [
+            2,
+            "after"
+        ],
+        "padded-blocks": [
+            2,
+            "never"
+        ],
+        "quote-props": [
+            2,
+            "as-needed", {
+                "keywords": true
+            }
+        ],
+        "key-spacing": [
+            2, {
+                "beforeColon": false,
+                "afterColon": true
+            }
+        ],
+        "space-unary-ops": [
+            2, {
+                "words": false,
+                "nonwords": false
+            }
+        ],
+        "comma-spacing": [
+            2
+        ],
+        "no-spaced-func": 2,
+        "space-before-function-paren": [
+            2, {
+                "anonymous": "ignore",
+                "named": "never"
+            }
+        ],
+        "space-in-parens": [
+            2,
+            "never"
+        ],
+        "comma-dangle": [
+            2,
+            "never"
+        ],
+        "no-trailing-spaces": 2,
+        "yoda": [
+            2,
+            "never"
+        ],
+        "camelcase": [
+            2, {
+                "properties": "never"
+            }
+        ],
+        "comma-style": [
+            2,
+            "last"
+        ],
+        "curly": [
+            2,
+            "all"
+        ],
+        "dot-notation": 2,
+        "eol-last": 2,
+        "wrap-iife": 2,
+        "semi": [
+            2,
+            "always"
+        ],
+        "space-infix-ops": 2,
+        "keyword-spacing": [
+            2, {
+                "overrides": {
+                    "else": {
+                        "before": true
+                    },
+                    "while": {
+                        "before": true
+                    },
+                    "catch": {
+                        "before": true
+                    },
+                    "finally": {
+                        "before": true
+                    }
+                }
+            }
+        ],
+        "spaced-comment": [
+            2,
+            "always"
+        ],
+        "space-before-blocks": [
+            2,
+            "always"
+        ],
+        "indent": [
+            2,
+            4, {
+                "SwitchCase": 1
+            }
+        ],
+        "linebreak-style": [
+            2,
+            "unix"
+        ],
+        "quotes": [
+            2,
+            "single", {
+                "avoidEscape": true
+            }
+        ],
+        "jsx-quotes": [2, "prefer-single"],
+        "react/jsx-uses-vars": 2,
+        "react/jsx-no-duplicate-props": [2, { "ignoreCase": true }],
+        "react/jsx-no-undef": 2,
+        "react/jsx-uses-react": 2,
+        "react/jsx-no-bind": [2, { "ignoreRefs": true, "allowArrowFunctions": true }],
+        "react/jsx-no-target-blank": 2,
+        "react/jsx-closing-bracket-location": [2, "after-props"],
+        "react/jsx-curly-spacing": 2,
+        "react/jsx-wrap-multilines": 2,
+        "react/jsx-equals-spacing": 2,
+        "react/jsx-pascal-case": 2,
+        "react/jsx-handler-names": 2,
+        "react/jsx-key": 2,
+        "react/jsx-indent-props": 2,
+        "react/jsx-first-prop-new-line": [2, "multiline"],
+        "react/self-closing-comp": [2, { html: false }],
+        "react/sort-comp": [2, {
+            order: [
+                "static-methods",
+                "lifecycle",
+                "rendering",
+                "/^handle.+$/",
+                "everything-else"
+            ],
+            groups: {
+                rendering: [
+                    "render",
+                    "/^render.+$/"
+                ]
+            }
+        }],
+        "react/prefer-es6-class": 2,
+        "react/prefer-stateless-function": [2, { "ignorePureComponents": true }],
+        "react/no-direct-mutation-state": 2,
+        "react/no-multi-comp": [2, { "ignoreStateless": true }],
+        "react/no-string-refs": 2,
+        "react/no-danger": 2,
+        "react/no-deprecated": 2,
+        "react/no-is-mounted": 2,
+        "react/no-unknown-property": 2,
+        "react/prop-types": 2,
+        "react/react-in-jsx-scope": 2
+    },
+    "globals": {},
+    "env": {
+        "browser": true,
+        "es6": true,
+        "node": true,
+        "worker": true
+    },
+    "settings": {
+        "react": {
+            "pragma": "React",
+            "version": "15.4.1"
+        }
+    },
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "arrowFunctions": true,
+            "jsx": true,
+            "binaryLiterals": true,
+            "blockBindings": true,
+            "classes": true,
+            "defaultParams": true,
+            "destructuring": true,
+            "forOf": true,
+            "generators": true,
+            "modules": true,
+            "objectLiteralComputedProperties": true,
+            "objectLiteralDuplicateProperties": true,
+            "objectLiteralShorthandMethods": true,
+            "objectLiteralShorthandProperties": true,
+            "octalLiterals": true,
+            "regexUFlag": true,
+            "regexYFlag": true,
+            "restParams": true,
+            "spread": true,
+            "superInFunctions": true,
+            "templateStrings": true,
+            "unicodeCodePointEscapes": true,
+            "globalReturn": true,
+            "experimentalObjectRestSpread": true
+        }
+    },
+    "plugins": [
+        "react"
+    ]
+}
