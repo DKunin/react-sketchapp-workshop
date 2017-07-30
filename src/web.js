@@ -1,5 +1,5 @@
 import React from 'react';
-import FullForm from './panes/FullForm';
+import SingleButton from './panes/SingleButton';
 
 const styles = {
     containerStyle: {
@@ -11,7 +11,7 @@ const styles = {
 export default () => (
     <div>
         <div style={styles.containerStyle}>
-            <FullForm />
+            <SingleButton />
         </div>
     </div>
 );
