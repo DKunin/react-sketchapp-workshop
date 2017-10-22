@@ -8,7 +8,7 @@ export default ({ text, size, style }) => (
         <Text
             style={{
                 fontSize: headingSizes[size || 'default'],
-                fontFamily: size === 'small' ? 'Lato' : 'Lato-Black',
+                fontFamily: 'Helvetica',
                 ...style
             }}>
             {text}

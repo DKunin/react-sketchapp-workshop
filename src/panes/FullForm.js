@@ -6,6 +6,8 @@ import InputField from '../components/InputField';
 import Separator from '../components/Separator';
 import { basicColors } from '../designVariables';
 
+const mainGrayTextStyle = { color: basicColors.fontGray }
+
 export const FullForm = () => (
     <View
         style={{
@@ -15,12 +17,13 @@ export const FullForm = () => (
         }} >
         <Heading text='Contacts' style={{ paddingBottom: 20 }} />
 
-        <View style={{
-            width: 600,
-            justifyContent: 'space-around',
-            alignItems: 'flex-start',
-            flexDirection: 'row'
-        }}>
+        <View
+            style={{
+                width: 600,
+                justifyContent: 'space-around',
+                alignItems: 'flex-start',
+                flexDirection: 'row'
+            }}>
             <View>
                 <InputField width={300} placeholder='E-mail' />
                 <Separator />
@@ -33,16 +36,16 @@ export const FullForm = () => (
             </View>
             <View>
                 <Heading text='Basement company, New Your' size='small' />
-                <Text style={{ color: basicColors.fontGray }}>
+                <Text style={mainGrayTextStyle}>
                     hello@basis.com
                 </Text>
-                <Text style={{ color: basicColors.fontGray }}>
+                <Text style={mainGrayTextStyle}>
                     + 7 993 124 14 12
                 </Text>
                 <Separator />
                 <Separator />
                 <Heading text='Follow us2' size='small' />
-                <Text style={{ color: basicColors.fontGray }}>
+                <Text style={mainGrayTextStyle}>
                     twitter vk facebook
                 </Text>
             </View>

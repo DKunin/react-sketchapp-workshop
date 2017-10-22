@@ -3,8 +3,9 @@ export const basicColors = {
     gray: '#eee',
     fontGray: '#b8b8b8'
 };
+
 export const fonts = {
-    'default': 'Lato'
+    'default': 'Helvetica'
 };
 
 export const headingSizes = {
