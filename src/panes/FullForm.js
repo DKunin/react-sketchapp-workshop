@@ -6,7 +6,7 @@ import InputField from '../components/InputField';
 import Separator from '../components/Separator';
 import { basicColors } from '../designVariables';
 
-const mainGrayTextStyle = { color: basicColors.fontGray }
+const mainGrayTextStyle = { color: basicColors.fontGray };
 
 export const FullForm = () => (
     <View

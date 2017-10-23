@@ -1,6 +1,5 @@
 import React from 'react';
 import { Text, View } from 'react-primitives';
-
 import chroma from 'chroma-js';
 
 export default ({ text, styleColor, colored }) => (
@@ -11,7 +10,6 @@ export default ({ text, styleColor, colored }) => (
             alignItems: 'center',
             boxSizing: 'border-box',
             display: 'inline-block',
-            // borderWidth: 1,
             borderRadius: 4,
             paddingTop: 10,
             paddingBottom: 10,
@@ -29,7 +27,7 @@ export default ({ text, styleColor, colored }) => (
                     chroma(styleColor).luminance() > 0.50 ?
                         chroma(styleColor).darken(5).hex() :
                         styleColor,
-                fontFamily: 'Lato'
+                fontFamily: 'Helvetica'
             }} >
             {text}
         </Text>

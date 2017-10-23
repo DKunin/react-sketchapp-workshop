@@ -5,7 +5,7 @@ import chroma from 'chroma-js';
 
 import { basicColors } from '../designVariables';
 
-export default ({ placeholder, width, height }) => (
+export const InputField = ({ placeholder, width, height }) => (
     <View
         style={{
             backgroundColor: basicColors.gray,
@@ -15,9 +15,19 @@ export default ({ placeholder, width, height }) => (
         <Text
             style={{
                 padding: 10,
-                color: chroma(basicColors.gray).darken().hex()
+                color: chroma(basicColors.gray)
+                    .darken()
+                    .hex()
             }}>
             {placeholder}
         </Text>
     </View>
 );
+
+export default InputField;
+
+InputField.propTypes = {
+    placeholder: PropTypes.string,
+    width: PropTypes.number,
+    height: PropTypes.number
+};
